@@ -2,6 +2,8 @@
 
 Simple Alfred workflow for interacting with DEVONthink
 
+![screenshot](screenshot.png)
+
 
 ## Usage
 
@@ -12,6 +14,6 @@ This workflow also provides a 'Import to DEVONthink' file action for quickly add
 
 ## Installing
 
-Download the latest release [here](https://github.com/dvcrn/alfred-devonthink/releases). 
+Download the latest release [here](https://github.com/dvcrn/alfred-devonthink/releases).
 
 The workflow will auto-update itself if a new version becomes available. (You can disable this by deleting the 'Auto Update' node)
