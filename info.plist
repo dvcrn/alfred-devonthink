@@ -415,7 +415,7 @@ fi</string>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>Copy to DEVONthink</string>
+				<string>Import to DEVONthink</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
