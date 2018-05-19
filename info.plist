@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.davidmohl.alfred-devonthink</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>07E9E886-9639-45F6-89D0-B1698867A56B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FDB1AD51-2E3D-4BB2-9243-505A18B14669</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1FF4A0D8-A064-4004-B733-48DD05D3FD1C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>530F6D0F-EA3D-43E8-ADCA-402884078611</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>45837855-71EB-4026-B832-A42ACAF29469</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>703C7AAB-A520-4AAB-9851-E4C55003D55A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>530F6D0F-EA3D-43E8-ADCA-402884078611</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A7792F33-F7F4-4115-A21E-9AB958781F3E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>71638323-BE24-4896-9D97-69AD3764DF8E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>45837855-71EB-4026-B832-A42ACAF29469</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>99937B9B-A22A-4C33-A568-B8991CA29CC3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>703C7AAB-A520-4AAB-9851-E4C55003D55A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A7792F33-F7F4-4115-A21E-9AB958781F3E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>99937B9B-A22A-4C33-A568-B8991CA29CC3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C0E15750-B925-43DB-AAA4-B92841B228C6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>07E9E886-9639-45F6-89D0-B1698867A56B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DE0ECC8F-C656-43CB-BC23-C7E859B2BFD1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>703C7AAB-A520-4AAB-9851-E4C55003D55A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FDB1AD51-2E3D-4BB2-9243-505A18B14669</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DE0ECC8F-C656-43CB-BC23-C7E859B2BFD1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>David Mohl</string>
+	<key>description</key>
+	<string>Create a note in DEVONthink</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>DEVONthink</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>45837855-71EB-4026-B832-A42ACAF29469</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemTextContent</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemTitle</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>ds</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>DEVONthink Search</string>
+				<key>types</key>
+				<array>
+					<string>com.devon-technologies.metadata.think</string>
+					<string>com.devon-technologies.metadata.thinkpro</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>71638323-BE24-4896-9D97-69AD3764DF8E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># Based On The OneUpdater workflow, but heavily simplified for github releases
+# https://github.com/vitorgalvao/alfred-workflows/tree/master/OneUpdater
+
+# THESE VARIABLES MUST BE SET.
+readonly github_repo='dvcrn/alfred-devonthink'
+readonly frequency_check='1' # days
+
+# FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
+readonly info_plist='info.plist'
+
+function abort {
+  echo "${1}" &gt;&amp;2
+  exit 1
+}
+
+function notification {
+  osascript -e "display notification \"${1}\" with title \"${alfred_workflow_name}\" subtitle \"A new version is available\""
+}
+
+function fetch_remote_version {
+  curl --silent "https://api.github.com/repos/${github_repo}/releases/latest" | grep 'tag_name' | head -1 | sed -E 's/.*tag_name": "v?(.*)".*/\1/'
+}
+
+function fetch_download_url {
+  curl --silent "https://api.github.com/repos/${github_repo}/releases/latest" | grep 'browser_download_url.*\.alfredworkflow"' | head -1 | sed -E 's/.*browser_download_url": "(.*)".*/\1/'
+}
+
+function download_and_install {
+  readonly tmpfile="$(mktemp).alfredworkflow"
+  notification 'Downloading and installing…'
+  curl --silent --location --output "${tmpfile}" "${1}"
+  open "${tmpfile}"
+}
+
+# Local sanity checks
+[[ -n "${alfred_workflow_version}" ]] || abort "'alfred_workflow_version' must be set."
+[[ -n "${alfred_workflow_name}" ]] || abort "'alfred_workflow_name' must be set."
+[[ "${github_repo}" =~ ^.+\/.+$ ]] || abort "'github_repo' (${github_repo}) must be in the format 'username/repo'."
+[[ "${frequency_check}" =~ ^[0-9]+$ ]] || abort "'frequency_check' (${frequency_check}) must be a number."
+
+# Check for updates
+if [[ $(find "${info_plist}" -mtime +"${frequency_check}"d) ]]; then
+  if [[ "${alfred_workflow_version}" == "$(fetch_remote_version)" ]]; then
+    touch "${info_plist}" # Reset timer by touching local file
+    exit 0
+  fi
+
+  download_and_install "$(fetch_download_url)"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>703C7AAB-A520-4AAB-9851-E4C55003D55A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>&gt; {var:input}</string>
+				<key>title</key>
+				<string>New DEVONthink Note</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>99937B9B-A22A-4C33-A568-B8991CA29CC3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv	set theQuery to item 1 of argv		tell application id "DNtp"		create record with {name:theQuery, type:text, content:theQuery} in inbox	end tellend run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A7792F33-F7F4-4115-A21E-9AB958781F3E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>dn</string>
+				<key>subtext</key>
+				<string>&gt; {query}</string>
+				<key>text</key>
+				<string>Create DEVONthink Note</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1FF4A0D8-A064-4004-B733-48DD05D3FD1C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>input</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>530F6D0F-EA3D-43E8-ADCA-402884078611</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<false/>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Copy to DEVONthink</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>C0E15750-B925-43DB-AAA4-B92841B228C6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv	set theQuery to item 1 of argv		tell application id "DNtp"		import theQuery to inbox	end tellend run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FDB1AD51-2E3D-4BB2-9243-505A18B14669</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>&gt; {var:input}</string>
+				<key>title</key>
+				<string>Copied To DEVONthink</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>DE0ECC8F-C656-43CB-BC23-C7E859B2BFD1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>input</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>07E9E886-9639-45F6-89D0-B1698867A56B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>07E9E886-9639-45F6-89D0-B1698867A56B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>340</integer>
+			<key>ypos</key>
+			<integer>390</integer>
+		</dict>
+		<key>1FF4A0D8-A064-4004-B733-48DD05D3FD1C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>140</integer>
+			<key>ypos</key>
+			<integer>210</integer>
+		</dict>
+		<key>45837855-71EB-4026-B832-A42ACAF29469</key>
+		<dict>
+			<key>xpos</key>
+			<integer>430</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+		<key>530F6D0F-EA3D-43E8-ADCA-402884078611</key>
+		<dict>
+			<key>xpos</key>
+			<integer>340</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>703C7AAB-A520-4AAB-9851-E4C55003D55A</key>
+		<dict>
+			<key>note</key>
+			<string>Auto Update - remove to disable</string>
+			<key>xpos</key>
+			<integer>870</integer>
+			<key>ypos</key>
+			<integer>170</integer>
+		</dict>
+		<key>71638323-BE24-4896-9D97-69AD3764DF8E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>140</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+		<key>99937B9B-A22A-4C33-A568-B8991CA29CC3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>600</integer>
+			<key>ypos</key>
+			<integer>210</integer>
+		</dict>
+		<key>A7792F33-F7F4-4115-A21E-9AB958781F3E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>430</integer>
+			<key>ypos</key>
+			<integer>210</integer>
+		</dict>
+		<key>C0E15750-B925-43DB-AAA4-B92841B228C6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>140</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>DE0ECC8F-C656-43CB-BC23-C7E859B2BFD1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>600</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>FDB1AD51-2E3D-4BB2-9243-505A18B14669</key>
+		<dict>
+			<key>xpos</key>
+			<integer>430</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://twitter.com/davicorn</string>
+</dict>
+</plist>
