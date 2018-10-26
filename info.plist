@@ -34,19 +34,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>45837855-71EB-4026-B832-A42ACAF29469</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>703C7AAB-A520-4AAB-9851-E4C55003D55A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>530F6D0F-EA3D-43E8-ADCA-402884078611</key>
 		<array>
 			<dict>
@@ -60,11 +47,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>71638323-BE24-4896-9D97-69AD3764DF8E</key>
+		<key>850FB534-05A4-4F83-ABBE-88EF4C096611</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>45837855-71EB-4026-B832-A42ACAF29469</string>
+				<string>703C7AAB-A520-4AAB-9851-E4C55003D55A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -104,6 +91,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>07E9E886-9639-45F6-89D0-B1698867A56B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CE762379-94F7-4E23-A945-478CA2F1863B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>850FB534-05A4-4F83-ABBE-88EF4C096611</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -152,106 +152,125 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv	set theQuery to item 1 of argv		tell application id "DNtp"		create record with {name:theQuery, type:text, content:theQuery} in inbox	end tellend run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>sourcefile</key>
-				<string></string>
+				<key>type</key>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>45837855-71EB-4026-B832-A42ACAF29469</string>
+			<string>A7792F33-F7F4-4115-A21E-9AB958781F3E</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>anchorfields</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>&gt; {var:input}</string>
+				<key>title</key>
+				<string>New DEVONthink Note</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>99937B9B-A22A-4C33-A568-B8991CA29CC3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
-				<key>daterange</key>
-				<integer>0</integer>
-				<key>fields</key>
-				<array>
-					<dict>
-						<key>field</key>
-						<string>kMDItemDisplayName</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemFinderComment</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemTextContent</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemTitle</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-				</array>
-				<key>includesystem</key>
-				<false/>
 				<key>keyword</key>
-				<string>ds</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>scopes</key>
-				<array/>
+				<string>dn</string>
 				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>DEVONthink Search</string>
-				<key>types</key>
-				<array>
-					<string>com.devon-technologies.metadata.think</string>
-					<string>com.devon-technologies.metadata.thinkpro</string>
-				</array>
+				<string>&gt; {query}</string>
+				<key>text</key>
+				<string>Create DEVONthink Note</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.filefilter</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>71638323-BE24-4896-9D97-69AD3764DF8E</string>
+			<string>1FF4A0D8-A064-4004-B733-48DD05D3FD1C</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>input</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>530F6D0F-EA3D-43E8-ADCA-402884078611</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<false/>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Import to DEVONthink</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>C0E15750-B925-43DB-AAA4-B92841B228C6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv	set theQuery to item 1 of argv		tell application id "DNtp"		import theQuery to inbox	end tellend run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FDB1AD51-2E3D-4BB2-9243-505A18B14669</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -336,129 +355,6 @@ fi</string>
 				<key>text</key>
 				<string>&gt; {var:input}</string>
 				<key>title</key>
-				<string>New DEVONthink Note</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>99937B9B-A22A-4C33-A568-B8991CA29CC3</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>on run argv	set theQuery to item 1 of argv		tell application id "DNtp"		create record with {name:theQuery, type:text, content:theQuery} in inbox	end tellend run</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A7792F33-F7F4-4115-A21E-9AB958781F3E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>dn</string>
-				<key>subtext</key>
-				<string>&gt; {query}</string>
-				<key>text</key>
-				<string>Create DEVONthink Note</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>1FF4A0D8-A064-4004-B733-48DD05D3FD1C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>variables</key>
-				<dict>
-					<key>input</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>530F6D0F-EA3D-43E8-ADCA-402884078611</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<false/>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Import to DEVONthink</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>C0E15750-B925-43DB-AAA4-B92841B228C6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>on run argv	set theQuery to item 1 of argv		tell application id "DNtp"		import theQuery to inbox	end tellend run</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>FDB1AD51-2E3D-4BB2-9243-505A18B14669</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>&gt; {var:input}</string>
-				<key>title</key>
 				<string>Copied To DEVONthink</string>
 			</dict>
 			<key>type</key>
@@ -485,6 +381,74 @@ fi</string>
 			<string>07E9E886-9639-45F6-89D0-B1698867A56B</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>850FB534-05A4-4F83-ABBE-88EF4C096611</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>ds</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching DEVONthink for '{query}'...</string>
+				<key>script</key>
+				<string>osascript ./devonsearch.js $1
+
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>./devonsearch.sh</string>
+				<key>subtext</key>
+				<string>Search DEVONthink databases</string>
+				<key>title</key>
+				<string>DEVONthink Search</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>CE762379-94F7-4E23-A945-478CA2F1863B</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -521,13 +485,6 @@ The workflow will auto-update itself if a new version becomes available. (You ca
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
-		<key>45837855-71EB-4026-B832-A42ACAF29469</key>
-		<dict>
-			<key>xpos</key>
-			<integer>430</integer>
-			<key>ypos</key>
-			<integer>60</integer>
-		</dict>
 		<key>530F6D0F-EA3D-43E8-ADCA-402884078611</key>
 		<dict>
 			<key>xpos</key>
@@ -540,16 +497,16 @@ The workflow will auto-update itself if a new version becomes available. (You ca
 			<key>note</key>
 			<string>Auto Update - remove to disable</string>
 			<key>xpos</key>
-			<integer>870</integer>
+			<integer>920</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>360</integer>
 		</dict>
-		<key>71638323-BE24-4896-9D97-69AD3764DF8E</key>
+		<key>850FB534-05A4-4F83-ABBE-88EF4C096611</key>
 		<dict>
 			<key>xpos</key>
-			<integer>140</integer>
+			<integer>430</integer>
 			<key>ypos</key>
-			<integer>60</integer>
+			<integer>500</integer>
 		</dict>
 		<key>99937B9B-A22A-4C33-A568-B8991CA29CC3</key>
 		<dict>
@@ -572,6 +529,15 @@ The workflow will auto-update itself if a new version becomes available. (You ca
 			<key>ypos</key>
 			<integer>360</integer>
 		</dict>
+		<key>CE762379-94F7-4E23-A945-478CA2F1863B</key>
+		<dict>
+			<key>note</key>
+			<string>Search</string>
+			<key>xpos</key>
+			<integer>140</integer>
+			<key>ypos</key>
+			<integer>500</integer>
+		</dict>
 		<key>DE0ECC8F-C656-43CB-BC23-C7E859B2BFD1</key>
 		<dict>
 			<key>xpos</key>
@@ -588,7 +554,7 @@ The workflow will auto-update itself if a new version becomes available. (You ca
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.3.0</string>
+	<string>1.4.0</string>
 	<key>webaddress</key>
 	<string>https://twitter.com/davicorn</string>
 </dict>
