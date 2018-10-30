@@ -44,14 +44,13 @@ function run(argv) {
   }
 
   results.sort(function(a, b) {
-      return a.score - b.score;
+      return b.score - a.score;
   })
 
   const items = results.map(function(element) {
     return {
       title: element.name,
       subtitle: `Found in ${element.databaseName}${element.location}, score ${element.score}`,
-      uid: element.id,
       arg: element.url,
       icon: {
         type: "fileicon",
