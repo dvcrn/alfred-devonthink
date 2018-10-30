@@ -1,6 +1,6 @@
 const devonthink = Application('DEVONthink Pro');
 
-const MAX_RESULTS_PER_DB = 10;
+const MAX_RESULTS_PER_DB = 5;
 
 function doSearch(db, query) {
   results =  devonthink.search(query, {

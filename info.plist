@@ -235,42 +235,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Import to DEVONthink</string>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>&gt; {var:input}</string>
+				<key>title</key>
+				<string>Copied To DEVONthink</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>C0E15750-B925-43DB-AAA4-B92841B228C6</string>
+			<string>DE0ECC8F-C656-43CB-BC23-C7E859B2BFD1</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>on run argv	set theQuery to item 1 of argv		tell application id "DNtp"		import theQuery to inbox	end tellend run</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>FDB1AD51-2E3D-4BB2-9243-505A18B14669</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -346,23 +327,42 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>acceptsmulti</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>&gt; {var:input}</string>
-				<key>title</key>
-				<string>Copied To DEVONthink</string>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Import to DEVONthink</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>DE0ECC8F-C656-43CB-BC23-C7E859B2BFD1</string>
+			<string>C0E15750-B925-43DB-AAA4-B92841B228C6</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv	set theQuery to item 1 of argv		tell application id "DNtp"		import theQuery to inbox	end tellend run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FDB1AD51-2E3D-4BB2-9243-505A18B14669</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -379,25 +379,6 @@ fi</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>07E9E886-9639-45F6-89D0-B1698867A56B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>850FB534-05A4-4F83-ABBE-88EF4C096611</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -449,6 +430,25 @@ fi</string>
 			<string>CE762379-94F7-4E23-A945-478CA2F1863B</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>850FB534-05A4-4F83-ABBE-88EF4C096611</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
