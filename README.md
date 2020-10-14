@@ -2,7 +2,8 @@
 
 Simple Alfred workflow for interacting with DEVONthink
 
-![screenshot](screenshot.png)
+![screenshot1](ss1.png)
+![screenshot2](ss2.png)
 
 
 ## Usage
