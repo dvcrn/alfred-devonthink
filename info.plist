@@ -232,6 +232,8 @@
 			<dict>
 				<key>argument</key>
 				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
 				<key>variables</key>
 				<dict>
 					<key>input</key>
@@ -382,6 +384,8 @@ fi</string>
 			<dict>
 				<key>argument</key>
 				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
 				<key>variables</key>
 				<dict>
 					<key>input</key>
@@ -606,8 +610,10 @@ The workflow will auto-update itself if a new version becomes available. (You ca
 			<integer>360</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>1.4.2</string>
+	<string>1.4.3</string>
 	<key>webaddress</key>
 	<string>https://twitter.com/davicorn</string>
 </dict>
