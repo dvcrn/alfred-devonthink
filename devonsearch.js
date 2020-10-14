@@ -1,4 +1,4 @@
-const devonthink = Application('DEVONthink Pro');
+const devonthink = Application('DEVONthink 3');
 
 const MAX_RESULTS_PER_DB = 5;
 
@@ -37,7 +37,6 @@ function doSearch(db, query) {
 function run(argv) {
   const query = argv[0];
   const dbs = devonthink.databases();
-  const found = dbs.map((db) => doSearch(db, query));
   let results = [];
   for (const db of dbs) {
     results = results.concat(doSearch(db, query));
