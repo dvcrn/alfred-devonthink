@@ -1,4 +1,4 @@
-const devonthink = Application('DEVONthink 3');
+const devonthink = Application('DEVONthink');
 
 const MAX_RESULTS_PER_DB = 5;
 
