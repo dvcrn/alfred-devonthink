@@ -613,7 +613,7 @@ The workflow will auto-update itself if a new version becomes available. (You ca
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.4.3</string>
+	<string>1.4.4</string>
 	<key>webaddress</key>
 	<string>https://twitter.com/davicorn</string>
 </dict>
